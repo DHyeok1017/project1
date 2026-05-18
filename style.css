@@ -74,3 +74,23 @@ button:hover {
   margin: 0 0 5px;
   color: #007acc;
 }
+/* 학교 정보 섹션 */
+#school-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#school-info img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#school-info a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#school-info a:hover {
+  text-decoration: underline;
+}
