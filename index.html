@@ -2,49 +2,40 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>내 첫 웹페이지</title>
+  <title>대학교 공지사항 게시판</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    h1 {
-      color: #007acc;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>환영합니다!</h1>
-    <p>이곳은 나의 첫 번째 웹페이지입니다.</p>
+    <h1>📢 대학교 공지사항 게시판</h1>
   </header>
 
   <main>
-    <h2>소개</h2>
-    <p>여기에 프로젝트나 자기소개 내용을 작성할 수 있습니다.</p>
+    <section id="notice-form">
+      <h2>공지사항 등록</h2>
+      <form id="form">
+        <input type="text" id="title" placeholder="제목" required>
+        <textarea id="content" placeholder="내용" required></textarea>
+        <button type="submit">등록하기</button>
+      </form>
+    </section>
 
-    <h2>링크</h2>
-    <ul>
-      <li><a href="https://github.com/DHyeok1017/project1">내 GitHub 프로젝트</a></li>
-      <li><a href="https://dcs-learning.cnu.ac.kr/std/lecture">강의 페이지</a></li>
-    </ul>
+    <section id="notice-board">
+      <h2>공지사항 목록</h2>
+      <ul id="notice-list">
+        <!-- JS에서 공지사항이 추가됩니다 -->
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 나의 웹사이트</p>
+    <p>&copy; 2026 대학교 게시판</p>
   </footer>
+
+  <!-- JS 연결 -->
+  <script src="js/script.js"></script>
 </body>
 </html>
+
