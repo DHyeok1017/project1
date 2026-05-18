@@ -1,21 +1,34 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 40px;
+  margin: 20px;
   background-color: #f9f9f9;
   color: #333;
 }
 
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h1 {
   color: #007acc;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 button {
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #007acc;
   color: white;
   border: none;
@@ -25,4 +38,22 @@ button {
 
 button:hover {
   background-color: #005f99;
+}
+
+#notice-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notice-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.notice-item h3 {
+  margin: 0 0 5px;
+  color: #007acc;
 }
