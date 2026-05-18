@@ -13,15 +13,21 @@
   </header>
 
   <main>
+    <!-- 공지사항 등록 폼 -->
     <section id="notice-form">
       <h2>공지사항 등록</h2>
       <form id="form">
-        <input type="text" id="title" placeholder="제목" required>
-        <textarea id="content" placeholder="내용" required></textarea>
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+
+        <label for="content">내용</label>
+        <textarea id="content" name="content" placeholder="내용을 입력하세요" required></textarea>
+
         <button type="submit">등록하기</button>
       </form>
     </section>
 
+    <!-- 공지사항 목록 -->
     <section id="notice-board">
       <h2>공지사항 목록</h2>
       <ul id="notice-list">
@@ -35,7 +41,4 @@
   </footer>
 
   <!-- JS 연결 -->
-  <script src="js/script.js"></script>
-</body>
-</html>
-
+  <script src="js/script.js">
